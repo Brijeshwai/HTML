@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>animation</title>
+</head>
+<style>
+
+  #rect {
+height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+
+animation-name: rainbow;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+  }
+   
+   .square{
+    height: 100px;
+    width: 20%;
+    background: black;
+    
+    border-radius: 5px;
+    position:relative;
+
+
+     animation-name: square;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+  animation-iteration-count:reverse:
+   }
+
+@keyframes rainbow {
+  0% {
+    background-color:darkred;
+  }
+  15% {
+    background-color: firebrick;
+  }
+  30% {
+    background-color: red;
+  }
+  45% {
+    background-color:crimson;
+  }
+  55% {
+    background-color:lightcoral;
+  }
+   75% {
+    background-color::salmon
+  }
+  100% {
+    background-color:lightsalmon;
+  }
+
+}
+@keyframes square {
+  0% {
+    background-color: DarkTurquoise  left:0; top:0;px;
+  }
+  15% {
+    background-color:Turquoise;
+  }
+  30% {
+    background-color:PaleTurquoise ;
+  }
+  45% {
+    background-color:Aquamarine ;
+  }
+  55% {
+    background-color:Cyan ;
+  }
+   75% {
+    background-color:LightCyan ;
+  }
+  100% {
+    background-color:MediumTurquoise ;
+  }
+
+}
+
+  }
+</style>
+<div id="rect"></div>
+<div class="square"></div>
+<body>
+<!--For the element with the anim id, the code snippet above sets the animation-name to colorful and sets the animation-duration to 3 seconds. Then the @keyframes rule links to the animation properties with the name colorful. It sets the color to blue at the beginning of the animation (0%) which will transition to yellow by the end of the animation (100%). You aren't limited to only beginning-end transitions, you can set properties for the element for any percentage between 0% and 100%.
+ -->
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>speed</title>
+</head>
+<style>
+body{
+	background-image:linear-gradient(navy,red);
+	background-repeat:no-repeat;
+	background-size:fixed;
+	background-attachment:fixed;
+}
+/*The animation-timing-function property specifies the speed curve of the animation.
+
+    ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+    linear - Specifies an animation with the same speed from start to end
+    ease-in - Specifies an animation with a slow start
+    ease-out - Specifies an animation with a slow end
+    ease-in-out - Specifies an animation with a slow start and end
+    cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function
+*/
+div{
+	width:100px;
+	height:50px;
+	margin:30px;
+	background-color:white;
+	font-weight:italic;
+	color:orange;
+	position:relative;
+animation:rectangle 5s infinite;
+}
+#div1 {animation-timing-function: linear;
+	background-color:lavender;
+	color:yellow;
+	font-size:40px;
+	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	/*You can also use the text-shadow property to create a plain border around some text (without shadows)
+	text-shadow: -1px 4px red, 4px 7px blue, 9px 10px green, 5px -1px orange; :*/
+}
+#div2 {animation-timing-function: ease;
+text-shadow:2px 6px 5px red;
+color:black;
+font-size:20px;
+/* 1.horizontal shadow (2px)  2.vertical shadow (2px)
+3.blur effect(2px)
+#we can add more than one shadow.
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+*/
+}
+#div3 {animation-timing-function: ease-in;
+box-shadow:10px 10px 6px 10px  yellow;
+/*1.horizontal shadow (2px)  2.vertical shadow (2px)
+#we can give a shadow color also.
+3.blur effect"shadow"
+4.cover the background
+
+*/
+}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+@keyframes rectangle{
+	from{left:0px;}
+	to{left:800px;}
+}
+</style>
+</head>
+<body>
+<div id="div1">linear</div>
+<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">  ease-in-out</div>
+
+</body>
+</html>

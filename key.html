@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>key
+</title>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+	background-image:repeating-linear-gradient(gray,white);
+	background-size:cover;
+	background-attachment:fixed;
+}
+.a{
+	width:100px;
+	height:100px;
+	background-color:red;
+	animation-name:color;
+	animation-duration:3s;
+	position:relative;
+	animation-delay:-3s;
+	/*the animation-delay property specifies a delay for the start of an animation.*/
+	animation-iteration-count:infinite;
+	/*The animation-iteration-count property specifies the number of times an animation should run"can give infinite"*/
+	animation-direction:alternate-reverse;
+/*The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles.
+reverse=it will reverse the process.
+alternate=it is used to move forward and then backward.
+alternate-reverse=it is used to move first backward and then forward.*/
+   animation-fill-mode:backward;
+   /*The animation-fill-mode property specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both)."we can use none,forward,backward,both"*/
+}
+/* we can shortly write like this
+div {
+  animation: example 5s linear 2s infinite alternate;
+}*/
+@keyframes color{
+	0%{background-color:red;left:0px;top:0px;}
+	25%{background-color:yellow;left:0px;top:200px;}
+	50%{background-color:blue;left:200px;top:200px;}
+	75%{background-color:orange;left:200px;top:0;}
+	100%{background-color:green;left:0px;top:0px;}
+}
+h1{
+	text-align:center;
+}
+#v{
+	border-left:3px solid red;
+	height:700px;
+	position:absolute;
+	left:25%;
+	top:0%;
+	margin-left:-3px;
+}
+iframe{
+	margin-left:400px;
+}
+</style>
+</head>
+<body>
+<div class="a">
+</div>
+<div id="v"> vertical line</div>
+<!--
+for background image
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%); /* Standard syntax (must be last) */
+}
+
+#grad2 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(45deg,red,yellow 7%,green 10%); /* Standard syntax (must be last) */
+}
+
+#grad3 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(190deg,red,yellow 7%,green 10%); /* Standard syntax (must be last) */
+}
+
+#grad4 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(90deg,red,yellow 7%,green 10%); /* Standard syntax (must be last) */
+}
+<h1>Repeating Linear Gradient</h1>
+
+<div id="grad1"></div>
+
+<p>A repeating gradient on 45deg axe starting red and finishing green:</p>
+<div id="grad2"></div>
+
+<p>A repeating gradient on 190deg axe starting red and finishing green:</p>
+<div id="grad3"></div>
+
+<p>A repeating gradient on 90deg axe starting red and finishing green:</p>
+<div id="grad4"></div>-->
+<iframe width:"445" height:"370"
+   src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+   <!--autoplay:- it will allow us to play a next viddeo automatically.
+   loop:- the video will play forever.loop=1
+   control:-it hides the player controls.control=0
+   to disable or disable the video functions you can use 0 or 1-->
+ </iframe>
+</body>
+</html>

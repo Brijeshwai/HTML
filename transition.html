@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>transition</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="refresh" content="30">
+
+	<style>
+
+		div{
+			width:50px;
+			height:50px;
+			margin-left:600px;
+			background:pink;
+			color: red;
+			transition-duration:2s;
+			transition-delay:-1s;
+  			transition-timing-function:linear;
+  			transition:width 2s height:4s transform:2s;
+		}
+
+		div:hover{
+			width:500px; 
+			height:300px;
+			/*transform :used to rotate the element....*/
+			transform:rotate(180deg);
+		}
+
+		.a{
+			width:50px;
+			height:50px;
+			background:red;
+			color: red;
+			margin:20px;
+			transform:rotate(180deg);
+
+		}
+
+		.a:hover{
+			transform:rotate(-180deg);
+		}
+
+		table,th,td{
+			border:2px solid black;
+			border-collapse:collapse;
+			padding:5px;
+			text-align: center;
+			border-spacing: 9px;
+			background-color:#f1f1c1;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<button type="button"
+onclick="document.getElementById('time').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<center>
+	<button type="button"
+onclick="java()">Click me.....</button>
+
+<script>
+		function java(){
+			document.getElementById("java").innerHTML="Hello it is Java Script!";
+		}
+	</script>
+	<noscript>Sorry, Your browser does not support Java Script..!</noscript></center>
+<p id="time"></p>
+
+<center><p id="java"></p></center>
+
+<p style="font-size:40px">emoji is created through a code called emoji code     &#128591  &#149 &#149 &#149 &#149 </p>
+
+ 
+
+<div><bdo dir="rtl">transition 
+### for putting power
+<var>(2)</var><sup>2</sup></bdo></div>
+
+<div class="a"></div>
+
+<table style="width:100%">
+	<tr>
+		<th>name</th>
+		<th>class</th>
+		<th>roll_no</th>
+		<th colspane="2">telephone</th>
+		<th rowspan="4">image</th>
+	</tr>
+	<tr>
+	<td>sam</td>
+	<td>smith</td>
+	<td>1</td>
+	<td></td>
+	</tr>
+
+<tr>
+	<td>sam</td>
+	<td>smith</td>
+	<td>1</td>
+	</tr>
+	<tr>
+	<td>sam</td>
+	<td>smith</td>
+	<td>1</td>
+	</tr>
+	<tr>
+	<td>sam</td>
+	<td>s,xaxa</td>
+	<td>1</td>
+	<td>61982470127</td>
+	</tr>
+
+</table>
+
+<picture>
+  <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRoGj2gxgIoWVo_kfdVie5_1Ti_ICdf2xnlKA&usqp=CAU" media="(max-width: 600px)">
+  	<source srcset="https://i.pinimg.com/originals/dc/02/5e/dc025ef54ba7b689ce80a8de2ee4a6f2.jpg"media="(max-width:1500px)">
+
+  	<img src="https://i.pinimg.com/originals/dc/02/5e/dc025ef54ba7b689ce80a8de2ee4a6f2.jpg" alt"flower" style="width:auto";>
+</picture>
+
+</body>
+</html>

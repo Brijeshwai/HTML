@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resize Window</title>
+	<style type="text/css">
+		body{
+	background-color:tomato;
+	}
+
+	p{
+		font-size: 40px;
+	}
+
+	button{
+		border-radius:20px;
+		padding:7px;
+		background-color:aqua;
+		opacity: 0.1;
+		margin: 20px;
+	}
+
+	button:hover{
+		opacity: 0.9;
+	}
+	</style>
+</head>
+<body>
+
+<p style="font-size:4vw">Open a new window, and resize the width and height to 250px:</p>
+<p><b>Tip:</b> Press the "Resize window" multiple times (the window will increase 250px for each press).</p>
+
+<button onclick="openWin()">Create window</button>
+<button onclick="resizeWin()">Resize window</button>
+
+<script>
+var myWindow;
+
+function openWin() {
+  myWindow = window.open("", "", "width=100, height=100");
+}
+
+function resizeWin() {
+  myWindow.resizeBy(50, 50);
+  myWindow.focus();
+}
+</script>
+
+</body>
+</html>

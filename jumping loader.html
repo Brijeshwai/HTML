@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Jumping ball loader.
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale='1'">
+<style type="text/css">
+	body{
+		background-image: url(https://img.pngio.com/color-abstract-fluid-gradient-background-png-and-background-gradient-background-png-1920_700.jpg);
+		background-size: cover;
+		background-attachment: fixed;
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+	#container{
+		display: flex;
+		margin-top: 18%;
+		animation: tofro 1s linear infinite alternate;
+	}
+	@keyframes tofro{
+		0%{transform: translateX(0px);}
+		100%{transform: translateX(60px);}
+	}
+	.circle-one{
+		width: 15px;
+		height: 15px;
+		background-color: red;
+		border-radius: 50%;
+		animation: jump 0.55s ease-in-out alternate infinite;
+	}
+	.circle-two{
+		width: 15px;
+		height: 15px;
+		margin-left: 0.9%;
+		background-color: blue;
+		border-radius: 50%;
+		animation: jump 0.55s ease-in-out infinite alternate 0.13s;
+	}
+	.circle-three{
+		width: 15px;
+		height: 14.5px;
+		margin-left: 1%;
+		background-color: green;
+		border-radius: 50%;
+		animation: jump 0.55s ease-in-out infinite alternate 0.25s;
+	}
+	@keyframes jump{
+		100%{transform: translateY(-90px);}
+	}
+	.platform{
+		margin-left: -50%;
+		margin-top: 15%;
+		height: 50px;
+		width: 55px;
+		transform: translateX(0px);
+		background: repeating-radial-gradient(hotpink, forestgreen, dodgerblue);
+		border: 0.2px solid #999999;
+		box-shadow: 5px 5px 15px #262626, -3px -3px 15px #262626;
+	}
+	</style>
+</head>
+<body>
+<div id="container">
+	<div class="circle-one"> </div>
+	<div class="circle-two"> </div>
+	<div class="circle-three"> </div>
+	<div class="platform"></div>
+</div>
+</body>
+</html>

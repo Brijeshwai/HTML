@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Map</title>
+	<style type="text/css">
+		h1{
+			font-family:Bickham scriptpro;
+		}
+	</style>
+</head>
+<body>
+	<marquee direction="right">Hey well come to  my page</marquee>
+<marquee behavior="slide" direction="left" sacrollamount="3"><h1>Image Map</h1></marquee>
+<center><img src="table.jpg" alt="table" usemap="#workmap" width="400" height="400">
+
+<map name="workmap">
+<area shape="rect" coords="49, 370, 160, 195" alt="phone" href="phone." onclick="myFunction_phone()">
+
+<area shape="rect" coords="49,200,150,90" alt="specs" href="specs.html" onclick="myFunction_specs()">
+
+<area shape="rect" coords="240,310,310,80" alt="pen"href="pen.html" onclick="myFunction_pen()">
+
+<area shape="circle" coords="350,285,50,90" alt="coffee" href="coffee.html" onclick="myFunction_cup()">
+
+<area shape="circle" coords="50,60,70,10" alt="plant" href="plant.html" onclick="myFunction()">
+</map>
+
+<script>
+	function myFunction_phone(){
+		alert("you clicked the phone..!");
+	}
+	function myFunction_specs(){
+		alert("you clicked the specs..!");
+	}
+	function myFunction_pen(){
+		alert("you clicked the pen..!");
+	}
+	function myFunction_cup(){
+		alert("you clicked the cup..!");
+	}
+	function myFunction_plant(){
+		alert("you clicked the plant..!");
+	}
+</script>
+</body>
+</html>

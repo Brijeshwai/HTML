@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drag</title>
+	<style>
+		div{
+			transition-duration:2s;
+			transition-delay:-1s;
+  			transition-timing-function:linear;
+  			transition:width 2s height:4s transform:2s;
+		}
+
+		#div1,#div2,#div3{
+			float:left;
+			width:120px;
+			height:100px;
+			margin:10px;
+			padding:10px;
+			border:3px solid black;
+			opacity: 0.;
+			display: block;
+		}    
+		#div1:hover{
+			opacity: 0.3;
+			background-color: red;
+			transform: rotate(90deg);
+		}
+		#div2:hover{
+			opacity: 0.3;
+			background-color:green;
+			transform: rotate(90deg);
+		}
+		#div3:hover{
+			opacity: 0.3;
+			background-color:purple;
+			transform: rotate(90deg);
+		}
+		#div4,#div5,#div6{
+			float:left;
+			object-position: right;
+			width:120px;
+			height:100px;
+			margin:10px;
+			padding:10px;
+			border:3px solid black;
+			opacity: 0.;
+			display: table;
+		}
+		#div4:hover{
+			opacity: 0.3;
+			background-color:aqua;
+			transform: rotate(90deg);
+		}
+		#div5:hover{
+			opacity: 0.3;
+			background-color:lime;
+			transform: rotate(90deg);
+		}
+		#div6:hover{
+			opacity: 0.3;
+			background-color:yellow;
+			transform: rotate(90deg);
+		}
+		img{
+			opacity: 0.8;
+		}
+		img:hover{
+			opacity: 0.8;
+		}
+
+	</style>
+	<script>
+function allowDrop(ev){
+	ev.preventDefault();
+}
+
+function drag(ev){
+	ev.dataTransfer.setData("text",ev.target.id);
+}
+function drop(ev){
+	ev.preventDefault();
+	var data = ev.dataTransfer.getData("text");
+
+	ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>		
+	<div id="div1" ondrop="drop(event)" 
+	ondragover="allowDrop(event)">
+<img src="index.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+</div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+&#128563
+&#128559
+&#128563
+&#128562
+</body>
+</html>
+

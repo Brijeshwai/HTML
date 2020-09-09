@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dropup</title>
+	<style type="text/css">
+		.dropbtn{
+			background-color:lightblue;
+			color: white;
+			padding:17px;
+			font-size: 16px;
+			border:none;
+		}
+		.dropup{
+			position: relative;
+			display: inline-block;
+		}
+		.content{
+			display:none;
+			position:absolute;
+			background-color:white;
+			min-width: 160px;
+			color: black;
+			bottom: 50px;
+		}
+		.content a{
+			color: black;
+			padding: 12px 16px;
+			display: block;
+		}
+		.content a:hover{
+			background-color:gray;
+		}
+		.dropup:hover .content{
+			display:block;
+		}
+		.dropup:hover .dropbtn{
+			background-color:mediumseagreen;
+		}
+	</style>
+</head>
+<body>
+	<br>
+	<hr>
+	<br>
+	<hr>
+	<br>
+	<hr>
+	<div class="dropup">
+		<button class="dropbtn">Drop Up</button>
+		<div class="content">
+		<a href="website.html">Website</a>
+		<a href="image-zoom.html">Image Zoom</a>
+		<a href="image-map.html">Image Map</a>
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Overlay</title>
+	<style type="text/css">
+		.container{
+			position:relative;
+			width: 50%;
+		}
+		.image{
+			display:block;
+			width:100%;
+			height:auto;
+		}
+		.overlay{
+			position:absolute;
+			height: 100%;
+			width: 100%;
+			transition:.5s ease;
+			background-color: #004258;
+			opacity: 0;
+		}
+		.container:hover.overlay{
+			opacity:0.1;
+		}
+		.text{
+			color:white;
+			font-size: 25px;
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%, -50%);
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="girl.jpg" alt="avatar" class="image">
+		<div class="overlay">
+			<div class="text">Jennie</div>
+		</div>
+	</div>
+</body>
+</html>

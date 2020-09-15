@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Image Transparent</title>
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		body{
+			font-family:arial;
+			font-size: 20px;
+		}
+		.container{
+			position:relative;
+			max-width:999px;
+			margin:0 auto;
+		}
+		.container img{
+			vertical-align: middle;
+		}
+		.container .content{
+		position: absolute;
+		color: white;
+    bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+		width:100%;
+		padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="books.jpg" alt="book" style="width:100%;">
+		<div class="content">
+			<h1>Books</h1>
+	<pre>
+		   A book is a magical
+		thing that lets you travel
+	           to far-away places
+		   without ever leaving
+		     your chair.
+	</pre>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Shake</title>
+	<style type="text/css">
+
+		img:hover {
+			animation:shake 0.5s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes shake{
+			0%{transform: translate(1px,1px) rotate(0deg);}
+			10%{transform: translate(-1px,-2px) rotate(-1deg);}
+			20%{transform: translate(-3px,0px) rotate(1deg);}
+			30%{transform: translate(3px,2px) rotate(0deg);}
+			40%{transform: translate(1px,-1px) rotate(1deg);}
+			50%{transform: translate(-1px,2px) rotate(-1deg);}
+			60%{transform: translate(-3px,1px) rotate(0deg);}
+			70%{transform: translate(3px,1px) rotate(-1deg);}
+			80%{transform: translate(-1px,-1px) rotate(1deg);}
+			90%{transform: translate(1px,2px) rotate(0deg);}
+			100%{transform: translate(1px,-2px) rotate(-1deg);}
+		}
+	</style>
+</head>
+<body>
+<img src="https://cbsnews2.cbsistatic.com/hub/i/r/2010/12/03/79ed9c0e-a644-11e2-a3f0-029118418759/thumbnail/1200x630/cfe704cb9840686e553d1ae1197d1466/365073.jpg" alt="mickey mouse" width="300" height="300">
+<img src="https://i.ytimg.com/vi/p7O22GuSc58/maxresdefault.jpg" width="300" height="300">
+<img src="https://i.pinimg.com/originals/13/c5/0b/13c50b65bb8083e2cd0a39464fa531ef.jpg" width="300" height="300">
+</body>
+</html>

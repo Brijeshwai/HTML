@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Image Grid</title>
+	<style type="text/css">
+		* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+	</style>
+</head>
+<body>
+<div class="header" id="myHeadder">
+	<button class="btn" onclick="one()">1</button>
+	<button class="btn" onclick="two()">2</button>
+	<button class="btn" onclick="three()">3</button>
+</div>
+
+<div class="row">
+	<div class="column">
+		<img src="https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" style="width: 100%">
+		<img src="https://www.clickorlando.com/resizer/E3GOdcWbcjnxGuBTd0MMMZq6ipw=/1600x901/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/arc-anglerfish-arc2-prod-gmg.s3.amazonaws.com/public/Z63RCH6KMBFXDJZWZD3QLAGRQE.jpg" style="width: 100%">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTVBuWslcHWnGlz7cvo-gjnj4EyyR4aOMp9tQ&usqp=CAU" style="width: 100%">
+		<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2a5d9f2f-5abe-47cf-85cb-de5b288247b1/ddmkpju-3af60e18-b318-4e53-96da-93044d22e6b6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMmE1ZDlmMmYtNWFiZS00N2NmLTg1Y2ItZGU1YjI4ODI0N2IxXC9kZG1rcGp1LTNhZjYwZTE4LWIzMTgtNGU1My05NmRhLTkzMDQ0ZDIyZTZiNi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.oCRVJBtyuOYwlPE5oN2UAlj_x3Q7P_czW6BPINOjJCY" style="width: 100%">
+		<img src="https://www.animatedtimes.com/wp-content/uploads/2020/01/The-Mandalorian-Creator-Reveals-Whether-Baby-Yoda-Is-Related-to-Yoda-1280x720.jpg"  style="width: 100%">
+	</div>
+
+	<div class="column">
+		<img src="https://i.ytimg.com/vi/CpvpZKO0Lmk/maxresdefault.jpg" style="width: 100%">
+		<img src="https://i.ytimg.com/vi/q-mMtWY9Nuc/maxresdefault.jpg" style="width: 100%">
+		<img src="https://i0.wp.com/listamaze.com/wp-content/uploads/2018/02/Mickey-Mouse.jpg?resize=600%2C567&ssl=1" style="width: 100%">
+		<img src="https://i.pinimg.com/originals/94/91/80/94918064a9c54db5b252fb95b2866b71.jpg" style="width: 100%">
+		<img src="https://images-na.ssl-images-amazon.com/images/I/41VCSGAQWQL.jpg" style="width: 100%">
+	</div>
+
+	<div class="column">
+		<img src="https://lumiere-a.akamaihd.net/v1/images/image_03eebe38.png?region=0,0,1920,1080&width=768" style="width: 100%">
+		<img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F12%2FBest-movies-of-the-year.jpg?w=1600&cbr=1&q=90&fit=max" style="width: 100%">
+		<img src="https://cdn.arstechnica.net/wp-content/uploads/2019/12/ars-2019-movies-800x450.jpg" style="width: 100%">
+		<img src="https://i.insider.com/5a70c5ccec1ade1e3577d19f?width=1100&format=jpeg&auto=webp" style="width: 100%">
+		<img src="https://www.syfy.com/sites/syfy/files/styles/1200x680_hero/public/2019/11/disney-streaming-guide.jpg" style="width: 100%">
+	</div>
+
+	<div class="column">
+		<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2020-bestsongs-1-1580492335.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*" style="width: 100%">
+		<img src="https://in.bookmyshow.com/entertainment/wp-content/uploads/2018/03/Celebrating-Women%E2%80%99s-Day-With-10-Bollywood-Songs-for-Women_960x540.jpg" style="width: 100%">
+		<img src="https://pbs.twimg.com/media/CTRZ1VQVAAAcdDr.jpg" style="width: 100%">
+		<img src="https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/o2psve4ha3o6sgh1_1593670645.jpeg?tr=w-812,h-464" style="width: 100%">
+		<img src="https://static.toiimg.com/thumb/msid-36891557,imgsize-34383,width-1070,height-580,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/36891557.jpg" style="width: 100%">
+	</div>
+	</div>
+<script type="text/javascript">
+	// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</script>
+</body>
+</html>

@@ -87,7 +87,6 @@ You can contribute to any open source project hosted on Github.com and contribut
 <!DOCTYPE html>
 <html>
 <head>
-<title>First program</title>
 </head>
 <body>
 

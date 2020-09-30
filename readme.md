@@ -1,5 +1,4 @@
-
-﻿# WIR  CODERS
+# WIR  CODERS
 
 ## Opinionated Code Formatter
 
@@ -88,7 +87,7 @@ You can contribute to any open source project hosted on Github.com and contribut
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>First program</title>
 </head>
 <body>
 

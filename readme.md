@@ -72,21 +72,21 @@ You can contribute to any open source project hosted on Github.com and contribut
 
 `<!DOCTYPE html>`
 
-`<html>`
+`<HTML>`
 
-`<head>`
+`<HEAD>`
 
-`<title>First program</title>`
+`<TITLE>First program</TITLE>`
 
-`</head>`
+`</HEAD>`
 
-`<body>`
+`<BODY>`
 
 `<h1>Hello world..!<\h1>`
 
-`</body>`
+`</BODY>`
 
-`</html>`
+`</HTML>`
 
 
 # Output

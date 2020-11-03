@@ -17,7 +17,7 @@
   border: 3px solid #000;
   border-radius: 50%;
   cursor: none;
-  /*Set the size of the magnifier glass:*/
+  
   width: 100px;
   height: 100px;
 }
@@ -29,19 +29,19 @@
   /*create magnifier glass:*/
   glass = document.createElement("DIV");
   glass.setAttribute("class", "img-magnifier-glass");
-  /*insert magnifier glass:*/
+ 
   img.parentElement.insertBefore(glass, img);
-  /*set background properties for the magnifier glass:*/
+  
   glass.style.backgroundImage = "url('" + img.src + "')";
   glass.style.backgroundRepeat = "no-repeat";
   glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
   bw = 3;
   w = glass.offsetWidth / 2;
   h = glass.offsetHeight / 2;
-  /*execute a function when someone moves the magnifier glass over the image:*/
+  
   glass.addEventListener("mousemove", moveMagnifier);
   img.addEventListener("mousemove", moveMagnifier);
-  /*and also for touch screens:*/
+
   glass.addEventListener("touchmove", moveMagnifier);
   img.addEventListener("touchmove", moveMagnifier);
   function moveMagnifier(e) {

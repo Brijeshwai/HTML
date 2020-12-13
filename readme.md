@@ -50,7 +50,7 @@ Hacktoberfest® is open to everyone in our global community. Whether you’re a 
     
 -  Create a branch with a descriptive name (navbar-fix)
     
--  Write these commands on your terminal:
+-  Write these commands on your terminal:💻
     
     git add -A (to stage your changes) git commit -m "very breif info of what youv'e done" git push origin master
     

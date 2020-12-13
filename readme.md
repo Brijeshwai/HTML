@@ -60,7 +60,7 @@ Hacktoberfest® is open to everyone in our global community. Whether you’re a 
 
 
 ![](https://media.giphy.com/media/xUOxf7XfmpxuSode1O/giphy.gif)
-## What if my pull requests aren’t accepted?
+## What if my pull requests aren’t accepted?😢😥
 
 Even if your pull requests aren’t accepted, they should still count toward your 4 pull requests necessary to earn the shirt. The only exception would be if the project maintainer chooses to mark your pull request as “invalid”. They may do this if they perceive your pull request to be low effort, or if it contains plagiarism.
 

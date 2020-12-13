@@ -40,7 +40,7 @@ The Hacktoberfest’s simple plain objective is: Support open source and earn a 
 Hacktoberfest® is open to everyone in our global community. Whether you’re a developer, student learning to code. You can contribute to anything from code to simple fix, new feature to grammar mistake.
 
 ## How to contribute in this repo.
-- Search for the repo you want .
+- Search for the repo you want .🧐
 
 -   Fork the repository.
     

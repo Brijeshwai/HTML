@@ -56,7 +56,7 @@ Hacktoberfest® is open to everyone in our global community. Whether you’re a 
     
 - Then create your pull request.
 
--   Congratulations!! You have successfully created your pull request.  🌠
+-   Congratulations!! You have successfully created your pull request.  🌠🤩🧨🎉
 
 
 ![](https://media.giphy.com/media/xUOxf7XfmpxuSode1O/giphy.gif)
